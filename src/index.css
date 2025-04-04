@@ -1,21 +1,108 @@
 :root {
-
+   --main-color : #ffffff
 }
+
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #fcffcb;
   text-decoration: inherit;
 }
+
 a:hover {
   color: #535bf2;
 }
 
 body {
-  margin: 0;
-  min-width: 320px;
-  min-height: 100vh;
+  margin: 0; 
 }
+
+/*scrollbar*/
+.has-scrollbar {
+  padding-bottom: 5px;
+}
+
+  .has-scrollbar::-webkit-scrollbar {
+      width: 3px;
+      height: 3px;
+  }
+
+  .has-scrollbar::-webkit-scrollbar-thumb {
+      background: transparent;
+      border: 3px solid var(--white);
+      -webkit-border-radius: 20px;
+      border-radius: 20px;
+  }
+
+  .has-scrollbar:hover::-webkit-scrollbar-thumb {
+      background: hsl(0, 0%, 90%);
+  }
+
+  .has-scrollbar::-webkit-scrollbar-thumb:hover {
+      background: hsl(0, 0%, 80%);
+  }
+/*end*/
+
+
+
+/*Home page*/
+.main-container{
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+/*end*/
+
+
+.banner {
+  background-image: url("../public/banner2.png");
+  background-size: cover;   /* Couvre tout l'espace */
+  object-fit: "cover";
+  background-position: center; /* Centre l'image */
+  background-repeat: no-repeat; /* Empêche la répétition */
+  /* S'assure que l'élément prend toute la largeur */
+  height: 20vh;
+  border-bottom: 1px solid #dcdcdc ;  
+}
+.profile-info{
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+@media (min-width:992px){
+  .main-container{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+  }
+
+}
+@media (min-width:1400px) {
+  .profile-info{
+    flex-direction: row;
+    justify-content: space-between;
+  }
+  
+}
+.img-profile{
+  max-height: 60px;
+}
+.profile-name{
+  font-family: "Winky Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 550;
+  font-style: normal;
+  font-size: 20px;
+}
+.menu{
+  width: 320px;
+  height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
 
 
 
