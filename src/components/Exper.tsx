@@ -2,7 +2,7 @@ import mimo from "../assets/momo.png"
 import { Link } from "react-router-dom"
 const Exper = () => {
   return (
-    <div className=" bg-light p-3">
+    <div className="bg-light border-bottom">
         <div className="p-3">
         <p className="mb-3 fs-4">Expérience</p>
             <div className="d-flex flex-column align-items-center gap-2">
@@ -27,10 +27,11 @@ const Exper = () => {
                 <div>       
                   <p className="p-0 m-0">
                         <strong>Projet :</strong> Développement d’un site e-commerce pour les produits
-                        traditionnels marocains..... <Link to="" >voire plus</Link> 
+                        traditionnels marocains..... <Link to="/experience" className=" text-black-50">voire plus</Link> 
                   </p>
                 </div>
             </div>
+            
       </div>
     </div>
   )
