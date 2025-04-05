@@ -107,4 +107,33 @@ body {
 
 
 
+.menu-item ,
+.menu-item:hover ,
+.menu-item:focus{
+  padding: 0.5rem 0.5rem;
+  color: #848484; /* bleu Bootstrap */
+  text-decoration: none;
+  background-color: transparent;
+}
+
+
+
+.menu-item.active {
+  color: #000000; /* bleu plus foncé */
+  text-decoration: underline;
+}
+
+.menu-item.disabled {
+  color: #060606; /* gris Bootstrap */
+  /* pointer-events: none;
+  cursor: default; */
+}
+
+
+
+
+
+
+
+
 

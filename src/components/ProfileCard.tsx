@@ -41,7 +41,7 @@ const ProfileCard = () => {
                             animate={{x:0}}
                             transition={{duration:0.3 , ease:"linear"}}
                       >
-                          <Sidebar />
+                          <Sidebar mobileSize={true}/>
 
                       </motion.div>
                   </AnimatePresence>}  
