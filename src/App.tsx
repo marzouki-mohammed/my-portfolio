@@ -6,6 +6,8 @@ import AllExperience from "./pages/AllExperience";
 import Dashboard from "./pages/Dashboard";
 import AboutPage from "./pages/AboutPage";
 import Postes from "./pages/Postes";
+import Certif from "./pages/Certif";
+import Projects from "./pages/Projects";
 
 const App = () => {
   return (
@@ -16,7 +18,9 @@ const App = () => {
           <Route path="experience" element={<AllExperience />} />
           <Route path="about" element={<AboutPage />} />
           <Route path="postes" element={<Postes />} />
+          <Route path="certification" element={<Certif />} />
           <Route path="dashboard" element={<Dashboard />} />
+          <Route path="projects" element={<Projects />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>

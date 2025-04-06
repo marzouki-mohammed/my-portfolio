@@ -129,6 +129,41 @@ body {
   cursor: default; */
 }
 
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  justify-content: center;
+  align-items: center;
+}
+
+.circle {
+  width: 15px;
+  height: 15px;
+  background-color: black;
+  border-radius: 50%;
+}
+
+
+
+.project-section {
+  background: radial-gradient(circle at top left, #3a0ca3, #1a1a40);
+  color: white;
+  border-radius: 10px;
+}
+
+.custom-card {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.02));
+  backdrop-filter: blur(10px);
+  border: none;
+  padding: 1rem;
+  border-radius: 10px;
+}
+
+
+
+
+
 
 
 
