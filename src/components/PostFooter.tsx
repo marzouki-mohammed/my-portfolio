@@ -72,10 +72,9 @@ const PostFooter = () => {
         {/* Boutons */}
         <div className="d-flex justify-content-around text-muted mb-3 mt-3 gap-1">
             
-                <div className="fs-6"><FaRegThumbsUp /> J’aime</div>
-                <div className="fs-6"><FaRegCommentDots /> Commenter</div>
-                <div className="fs-6"><FaShare /> Republier</div>
-                <div className="fs-6"><FaPaperPlane /> Envoyer</div>
+                <div className="fs-5"><FaRegThumbsUp /> J’aime</div>
+                <div className="fs-5"><FaRegCommentDots /> Commenter</div>
+
 
         </div>
 
