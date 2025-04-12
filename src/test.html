@@ -23,6 +23,71 @@
 
 
 
+    {/* Left Panel */}
+      <div className="left-panel d-none d-md-flex flex-column justify-content-between p-4 text-white">
+        <div>
+          <div className="d-flex justify-content-between">
+            <span className="fw-bold text-black">Selected Works</span>
+            <div>
+              <button className="btn btn-link text-white me-2">Sign Up</button>
+              <button className="btn btn-outline-light">Join Us</button>
+            </div>
+          </div>
+        </div>
+        <div className="text-center">
+          <p>Andrew.ui</p>
+          <p className="small">UI & Illustration</p>
+        </div>
+      </div>
+
+      {/* Right Panel */}
+      <div className="right-panel bg-white flex-grow-1 d-flex flex-column justify-content-center align-items-center p-4">
+        <div className="d-flex  align-items-center w-100 mb-2">
+          <Logo />
+          {/* <select className="form-select w-auto ms-auto">
+            <option value="en"> EN</option>
+            <option value="fr">FR</option>
+          </select> */}
+        </div>
+
+        <div className="text-center w-100" style={{ maxWidth: '400px' }}>
+          <h2 className="fw-bold mb-3">Hi Devlopper</h2>
+          <p className="mb-4">Welcome to My portfolio</p>
+
+          <form>
+            <div className="mb-3">
+              <input type="email" className="form-control" placeholder="Email" />
+            </div>
+            <div className="mb-2">
+              <input type="password" className="form-control" placeholder="Password" />
+            </div>
+            <div className="text-end mb-3">
+              <a href="/" className="text-danger small">Forgot password ?</a>
+            </div>
+
+            <button type="submit" className="btn btn-outline-dark w-100 mb-3">
+              Login with Google <span className="ms-2">🌐</span>
+            </button>
+
+            <button type="submit" className="btn btn-danger w-100 mb-3">
+              Login
+            </button>
+          </form>
+
+          <p className="small">
+            Don’t have an account? <a href="/" className="text-danger">Sign up</a>
+          </p>
+
+          <div className="mt-3">
+            <a href="/" className="me-3 text-dark"><i className="bi bi-facebook"></i></a>
+            <a href="/" className="me-3 text-dark"><i className="bi bi-twitter"></i></a>
+            <a href="/" className="text-dark"><i className="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+ 
+
+
     
 
     
