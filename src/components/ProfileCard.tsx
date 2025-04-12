@@ -8,7 +8,7 @@ import { useDispatch, useSelector } from "react-redux";
 import { open, close } from "../app/features/menuSlice";
 import { AppDispatch, RootState } from "../app/store";
 import AnimatedTitle from "./AnimatedTitle";
-import { useLocation } from "react-router-dom";
+import { useLocation , Link } from "react-router-dom";
 
 const ProfileCard = () => {
   const dispatch = useDispatch<AppDispatch>();
@@ -90,9 +90,13 @@ const ProfileCard = () => {
               <button type="button" className="btn border border-2 btn-light" style={{ height: "40px" }}>
                 View portfolio
               </button>
-              <button type="button" className="btn border border-2 btn-dark" style={{ height: "40px" }}>
+              <Link 
+                to="/LoginPage" 
+                className="btn border border-2 btn-dark" 
+                style={{ height: '40px' }}
+              >
                 + Follow
-              </button>
+              </Link>
             </div>
           </div>
         </div>

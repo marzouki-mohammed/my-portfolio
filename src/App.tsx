@@ -8,6 +8,7 @@ import AboutPage from "./pages/AboutPage";
 import Postes from "./pages/Postes";
 import Certif from "./pages/Certif";
 import Projects from "./pages/Projects";
+import LoginPage from "./pages/LoginPage";
 
 const App = () => {
   return (
@@ -21,6 +22,7 @@ const App = () => {
           <Route path="certification" element={<Certif />} />
           <Route path="dashboard" element={<Dashboard />} />
           <Route path="projects" element={<Projects />} />
+          <Route path="LoginPage" element={<LoginPage />} />
           <Route path="*" element={<NoPage />} />
         </Route>
       </Routes>
