@@ -333,10 +333,32 @@ body {
   }
 } */
 
-.login-container{
+.login-container {
   height: 100vh;
   width: 100vw;
+  background: 
+    /* Couche de base - dégradé bleu/gris clair */
+    linear-gradient(135deg, #4b86de 0%, #c54040 100%),
+    
+    /* Motif géométrique triangulaire subtil */
+    repeating-linear-gradient(
+      45deg,
+      rgba(255,255,255,0.3) 0px,
+      rgba(255,255,255,0.3) 10px,
+      transparent 10px,
+      transparent 20px
+    ),
+    
+    /* Deuxième motif en diagonale inverse */
+    repeating-linear-gradient(
+      -45deg,
+      rgba(0,0,0,0.05) 0px,
+      rgba(0,0,0,0.05) 10px,
+      transparent 10px,
+      transparent 20px
+    );
   
+  background-blend-mode: normal, overlay, normal;
 }
 
 .left-panel {
