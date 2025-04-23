@@ -85,6 +85,81 @@
           </div>
         </div>
       </div>
+
+
+
+      <Container fluid className="vh-100 d-flex flex-column">
+        {/* Header */}
+        <Row className="py-3 px-4">
+          <Col className="d-flex justify-content-between align-items-center">
+            <div className="text-muted">Selected Works</div>
+            <div>
+              <Button variant="outline-dark" size="sm" className="me-2">
+                Sign Up
+              </Button>
+              <Button variant="dark" size="sm">
+                Join Us
+              </Button>
+            </div>
+          </Col>
+        </Row>
+  
+        {/* Main Content */}
+        <Row className="flex-grow-1 d-flex align-items-center justify-content-center">
+          <Col md={6} lg={4} className="p-4">
+            {/* Logo */}
+            <div className="text-center mb-4">
+              <h1 className="fw-bold">USOCIAL</h1>
+              <div className="mb-4">BEGIN</div>
+            </div>
+  
+            {/* Welcome Text */}
+            <div className="mb-4">
+              <h3>Hi Designer</h3>
+              <h4 className="text-muted">Welcome to USOCIAL</h4>
+            </div>
+  
+            {/* Login Form */}
+            <Form>
+              <Form.Group className="mb-3">
+                <Form.Label>Build</Form.Label>
+                <Form.Control type="text" placeholder="Enter your build" />
+              </Form.Group>
+  
+              <Form.Group className="mb-3">
+                <Form.Label>Password</Form.Label>
+                <Form.Control type="password" placeholder="Enter your password" />
+              </Form.Group>
+  
+              <Form.Group className="mb-3">
+                <Form.Label>Foreign password 1</Form.Label>
+                <Form.Control type="password" placeholder="Enter foreign password" />
+              </Form.Group>
+  
+              <Button variant="outline-secondary" className="w-100 mb-3 d-flex align-items-center justify-content-center">
+                <FcGoogle className="me-2" size={20} />
+                Login with Google
+              </Button>
+  
+              <Button variant="dark" type="submit" className="w-100 mb-3">
+                Login
+              </Button>
+  
+              <div className="text-center text-muted">
+                Don't have an account? <a href="#signup">Sign up</a>
+              </div>
+            </Form>
+          </Col>
+        </Row>
+  
+        {/* Footer */}
+        <Row className="py-3 px-4">
+          <Col className="d-flex justify-content-between align-items-center">
+            <div className="text-muted">Andrew.us</div>
+            <div className="text-muted">U.S. Illustration</div>
+          </Col>
+        </Row>
+      </Container>
  
 
 
